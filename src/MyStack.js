@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 const MyStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="UnityScreen" component={UnityScreen} />
     </Stack.Navigator>
